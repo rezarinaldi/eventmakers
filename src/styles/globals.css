@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-200;
+  }
+  input,
+  textarea,
+  select {
+    @apply block w-full rounded-lg border border-slate-600 bg-slate-800 px-3 py-2 text-white;
+  }
+  button {
+    @apply block rounded-lg bg-white px-3 py-2 font-medium text-black disabled:opacity-50;
+  }
+  h1 {
+    @apply text-8xl font-semibold tracking-tighter text-white;
+  }
+  h3 {
+    @apply text-xl font-semibold tracking-tight;
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "eventmakers",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbo",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:migrate": "prisma migrate dev --name dev",
+    "db:studio": "prisma studio"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.600.0",
+    "@prisma/client": "^5.16.1",
+    "bcrypt": "^5.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "next": "15.0.0-canary.48",
+    "react": "19.0.0-rc.0",
+    "react-dom": "19.0.0-rc.0"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "15.0.0-canary.48",
+    "postcss": "^8",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "prisma": "^5.16.1",
+    "tailwindcss": "^3.4.1"
+  }
+}
